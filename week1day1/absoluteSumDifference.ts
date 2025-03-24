@@ -14,6 +14,8 @@ function absoluteSumDiff(nums: number[]): Result  {
     }
     let positiveSum = 0;
     let negativeSum = 0;
+    // Syntax sugar of iterating through array by for-of loop
+    // Note: In case you don't interest in index
     for (const n of nums) {
         if (n > 0) {
             positiveSum += n;

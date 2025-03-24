@@ -14,6 +14,7 @@ function maximumCountPositiveNegative(nums: number[]): Result  {
     }
     let positiveCount = 0;
     let negativeCount = 0;
+    // Normal traversal by index
     for (let i = 0; i < nums.length; i++) {
         if (nums[i] > 0) {
             positiveCount++;
