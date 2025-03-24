@@ -3,7 +3,7 @@ type Result = {
     diffBetweenGroup: number;
 }
 
-function maximumCountPositiveNegative(nums: number[]): Result  {
+export function maximumCountPositiveNegative(nums: number[]): Result  {
     // In case you use JavaScript
     // Check for Falsy -> null, undefined
     if (!nums || nums.length === 0) {
@@ -24,6 +24,12 @@ function maximumCountPositiveNegative(nums: number[]): Result  {
     }
     console.log("positiveCount: ", positiveCount);
     console.log("negativeCount: ", negativeCount);
+    if (positiveCount === negativeCount) {
+        return {
+            winnerGroup: 'N/A',
+            diffBetweenGroup: 0
+        }
+    }
     return {
         winnerGroup: positiveCount > negativeCount ? 'positive' : 'negative',
         diffBetweenGroup: Math.abs(positiveCount - negativeCount)

@@ -3,7 +3,7 @@ type Result = {
     diffBetweenGroup: number;
 }
 
-function absoluteSumDiff(nums: number[]): Result  {
+export function absoluteSumDiff(nums: number[]): Result  {
     // In case you use JavaScript
     // Check for Falsy -> null, undefined
     if (!nums || nums.length === 0) {
@@ -26,6 +26,12 @@ function absoluteSumDiff(nums: number[]): Result  {
     }
     console.log("positiveSum: ", positiveSum);
     console.log("negativeSum: ", negativeSum);
+    if (positiveSum === negativeSum) {
+        return {
+            winnerGroup: 'N/A',
+            diffBetweenGroup: 0
+        }
+    }
     return {
         winnerGroup: positiveSum > negativeSum ? 'positive' : 'negative',
         diffBetweenGroup: Math.abs(positiveSum - negativeSum)
