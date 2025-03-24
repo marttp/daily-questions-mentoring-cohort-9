@@ -4,6 +4,14 @@ type Result = {
 }
 
 function maximumCountPositiveNegative(nums: number[]): Result  {
+    // In case you use JavaScript
+    // Check for Falsy -> null, undefined
+    if (!nums || nums.length === 0) {
+        return {
+            winnerGroup: 'N/A',
+            diffBetweenGroup: 0
+        }
+    }
     let positiveCount = 0;
     let negativeCount = 0;
     for (let i = 0; i < nums.length; i++) {
