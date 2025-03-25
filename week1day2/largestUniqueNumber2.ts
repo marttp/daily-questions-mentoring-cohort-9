@@ -1,11 +1,11 @@
 export function largestUniqueNumberWithoutAdditionalMemory(nums: number[]): number {
   nums.sort((a, b) => a - b);
   let i = nums.length - 1;
-  while (i > 0) {
+  while (i >= 0) {
     // seen a duplicate
     if (nums[i] === nums[i - 1]) {
       // skip all duplicates, while kept decrement with limit
-      while (i > 0 && nums[i] === nums[i - 1]) {
+      while (i >= 0 && nums[i] === nums[i - 1]) {
         i--;
       }
     } else {
