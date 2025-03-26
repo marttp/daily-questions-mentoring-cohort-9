@@ -1,6 +1,6 @@
 # Week 1 Day 3 Challenges
 
-## 1. Find missing integer
+## 1. Find missing integers
 
 **Description:**  
 
