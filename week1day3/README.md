@@ -6,7 +6,7 @@
 
 Finds the missing numbers in an array of integers with a length of n and all positive integers present except for `k` missing integers. The program should return a list of the missing integers in ascending order.
 
-ให้ array of integers ที่มีความยาว n โดยตัวเลขภายใน array นี้จะมีครอบคลุมตัวเลขจำนวนเต็มบวกทั้งหมด เว้นแต่ integer ทั้งหมด `k` ตัวที่หายไป จงหาตัวเลขที่หายไปเหล่านี้ในรูปแบบจัดเรียงจากน้อยไปมาก
+ให้ array of integers ที่มีความยาว n โดยตัวเลขภายใน array นี้จะมีครอบคลุมตัวเลขจำนวนเต็มบวกทั้งหมด เว้นแต่ integer ทั้งหมด `k` ตัวที่หายไป โดยตัวเลขที่หายไป จะมีค่า `1 - n` จงหาตัวเลขที่หายไปเหล่านี้ในรูปแบบจัดเรียงจากน้อยไปมาก
 
 ---
 
