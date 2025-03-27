@@ -22,6 +22,13 @@ Input: text = "49po"
 Output: "po"
 ```
 
+***Example #3***
+
+```text
+Input: text = "asd8sx5a961os3"
+Output: "ao"
+```
+
 ---
 
 ## 2. Move Zeroes
