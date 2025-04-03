@@ -46,3 +46,11 @@ Input: intervals = []
 Output: true  
 Explanation: No meetings are scheduled, so there is no overlap.
 ```
+
+**Example 6:**
+
+```text
+Input: intervals = [[5, 8], [1, 3], [4, 6], [10, 15]]  
+Output: false  
+Explanation: The meeting [4, 6] overlaps with [5, 8], even though the intervals are unsorted.
+```
