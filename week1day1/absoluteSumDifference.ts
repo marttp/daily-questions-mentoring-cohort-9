@@ -24,8 +24,6 @@ export function absoluteSumDiff(nums: number[]): Result  {
             negativeSum += n * -1;
         }
     }
-    console.log("positiveSum: ", positiveSum);
-    console.log("negativeSum: ", negativeSum);
     if (positiveSum === negativeSum) {
         return {
             winnerGroup: 'N/A',
@@ -37,7 +35,3 @@ export function absoluteSumDiff(nums: number[]): Result  {
         diffBetweenGroup: Math.abs(positiveSum - negativeSum)
     }
 }
-
-const nums = [7, 6, -1000, 1, 0, 7, 0, 6, 0, 7, 4, 6, 5, 0, 1, 6, 8, 0, 7, 1, 4];
-const result = absoluteSumDiff(nums);
-console.log(result);

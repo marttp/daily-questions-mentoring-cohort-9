@@ -22,8 +22,6 @@ export function maximumCountPositiveNegative(nums: number[]): Result  {
             negativeCount++;
         }
     }
-    console.log("positiveCount: ", positiveCount);
-    console.log("negativeCount: ", negativeCount);
     if (positiveCount === negativeCount) {
         return {
             winnerGroup: 'N/A',
@@ -38,4 +36,3 @@ export function maximumCountPositiveNegative(nums: number[]): Result  {
 
 const nums = [7, 6, -1000, 1, 0, 7, 0, 6, 0, 7, 4, 6, 5, 0, 1, 6, 8, 0, 7, 1, 4];
 const result = maximumCountPositiveNegative(nums);
-console.log(result);
