@@ -55,3 +55,20 @@ export function groupAnagrams2(words: string[]): string[][] {
   }
   return Array.from(map.values());
 }
+
+export function groupAnagrams3(words: string[]): string[][] {
+    const unicodeSize = Math.pow(2, 16);
+    const map = new Map<string, string[]>();
+    for (const word of words) {
+      const charCount = Array(unicodeSize).fill(0);
+      for (const char of word) {
+        charCount[char.codePointAt(0)!!]++;
+      }
+      const key = charCount.join("#");
+      if (!map.has(key)) {
+        map.set(key, []);
+      }
+      map.get(key)?.push(word);
+    }
+    return Array.from(map.values());
+}
